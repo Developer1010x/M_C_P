@@ -1,0 +1,75 @@
+{
+  "mcpServers": {
+    "filesystem-mcp": {
+      "command": "node",
+      "args": ["../servers/filesystem-mcp/index.js"],
+      "cwd": "config",
+      "env": {
+        "NODE_ENV": "production",
+        "MCP_NAME": "filesystem-mcp"
+      },
+      "autoRestart": true,
+      "description": "File system operations and management"
+    },
+    "web-search-mcp": {
+      "command": "python3",
+      "args": ["../servers/web-search-mcp/main.py"],
+      "cwd": "config",
+      "env": {
+        "PYTHONPATH": "../servers",
+        "MCP_NAME": "web-search-mcp"
+      },
+      "autoRestart": true,
+      "description": "Web search and content fetching capabilities"
+    },
+    "database-mcp": {
+      "command": "node",
+      "args": ["../servers/database-mcp/index.js"],
+      "cwd": "config",
+      "env": {
+        "NODE_ENV": "production",
+        "MCP_NAME": "database-mcp"
+      },
+      "autoRestart": false,
+      "description": "Database operations and query management"
+    },
+    "code-assistant-mcp": {
+      "command": "node",
+      "args": ["../servers/code-assistant-mcp/index.js"],
+      "cwd": "config",
+      "env": {
+        "NODE_ENV": "production",
+        "MCP_NAME": "code-assistant-mcp"
+      },
+      "autoRestart": true,
+      "description": "Code generation and analysis tools"
+    },
+    "mcp-manager": {
+      "command": "node",
+      "args": ["../servers/mcp-manager/index.js"],
+      "cwd": "config",
+      "env": {
+        "NODE_ENV": "production",
+        "MCP_NAME": "mcp-manager",
+        "MCP_GUI": "true"
+      },
+      "autoRestart": true,
+      "description": "MCP Manager - Control center for all MCP servers and AI agents"
+    }
+  },
+  "global": {
+    "logLevel": "info",
+    "healthCheckInterval": 30000,
+    "autoRestartOnFailure": true,
+    "maxRestartAttempts": 3,
+    "restartDelay": 5000,
+    "timeout": 120000,
+    "enableMetrics": true,
+    "metricsPort": 9090
+  },
+  "claude": {
+    "autoConnect": true,
+    "reconnectInterval": 10000,
+    "maxReconnectAttempts": 5
+  }
+}

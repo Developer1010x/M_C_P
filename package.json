@@ -1,0 +1,51 @@
+{
+  "name": "universal-mcp-system",
+  "version": "1.0.0",
+  "description": "Universal Model Context Protocol (MCP) System - Cross-platform toolkit for Claude and MCP-compatible applications",
+  "main": "launchers/run-all.js",
+  "bin": {
+    "mcp": "./cli/mcp-cli.js"
+  },
+  "scripts": {
+    "setup": "node scripts/install.js",
+    "start": "node launchers/run-all.js",
+    "start:verbose": "node launchers/run-all.js --verbose",
+    "install:deps": "node scripts/install.js",
+    "global:setup": "npm link",
+    "test": "echo \"No tests configured yet\"",
+    "health": "node cli/mcp-cli.js health",
+    "list": "node cli/mcp-cli.js list"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "llm",
+    "cross-platform",
+    "toolkit",
+    "automation"
+  ],
+  "author": "MCP Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/MCP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/MCP/issues"
+  },
+  "homepage": "https://github.com/yourusername/MCP#readme",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {}
+}

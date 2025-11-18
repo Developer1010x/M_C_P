@@ -1,0 +1,25 @@
+{
+  "name": "filesystem-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for file system operations",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js --debug",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "mcp",
+    "filesystem",
+    "file-operations"
+  ],
+  "author": "MCP Community",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^10.3.10",
+    "mime-types": "^2.1.35"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
