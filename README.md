@@ -344,11 +344,10 @@ MIT License - see [LICENSE](LICENSE) file
 - Open source community
 - All contributors
 
-## 📞 Support
+## 📞 for Support
+911
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/MCP/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/MCP/discussions)
-- **Email**: mcp-support@example.com
+
 
 ## 🚦 Status
 #Under Develop.....🙏
