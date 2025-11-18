@@ -351,10 +351,7 @@ MIT License - see [LICENSE](LICENSE) file
 - **Email**: mcp-support@example.com
 
 ## 🚦 Status
-
-![Build Status](https://img.shields.io/github/workflow/status/yourusername/MCP/CI)
-![Last Commit](https://img.shields.io/github/last-commit/yourusername/MCP)
-![Open Issues](https://img.shields.io/github/issues/yourusername/MCP)
+#Under Develop.....🙏
 
 ---
 
